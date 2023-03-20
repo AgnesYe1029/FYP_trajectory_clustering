@@ -52,9 +52,6 @@ tpm.cluster_by_kmeans(trajVec, number_of_clusters)
 &nbsp;
 
 ## React.js Front-end Web Application
-### Requirements:
-
-&nbsp;
 ### To run:
 1. cd to local directory and then cd to ```frontend``` directory.
 ```
