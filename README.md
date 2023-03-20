@@ -2,10 +2,10 @@
 
 ## Model 1: Trajectory Clustering with Polyline Reduction
 ### Requirements:
-folium==0.14.0\
-hdbscan==0.8.29\
 numpy==1.21.5\
 pandas==1.4.4\
+folium==0.14.0\
+hdbscan==0.8.29\
 utm==0.7.0\
 The package requirements has been consolidated at model_1/requirements.txt.
 
@@ -17,8 +17,18 @@ The original jupyter notebook with interactive map visualization is also provide
 
 ## Model 2: Trajectory Clustering with Deep Learning
 ### Requirements:
-
-
+numpy==1.21.5\
+pandas==1.4.4\
+tensorflow==2.11.0\
+tensorflow-addons==0.19.0\
+tensorflow-estimator==2.11.0\
+keras==2.11.0\
+folium==0.14.0\
+hdbscan==0.8.29\
+scikit-learn==1.0.2\
+utm==0.7.0\
+The package requirements has been consolidated at model_2/requirements.txt.
+<br/>
 
 ## React.js Front-end Web application
 ### Requirements:
