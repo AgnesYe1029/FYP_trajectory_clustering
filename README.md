@@ -1,4 +1,4 @@
-# FYP_trajectory_clustering
+# SCSE22-0161：Mining Big Spatial Data
 
 ## Model 1: Trajectory Clustering with Polyline Reduction
 ### Requirements:
