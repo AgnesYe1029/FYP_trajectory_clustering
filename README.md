@@ -2,11 +2,11 @@
 
 ## Model 1: Trajectory Clustering with Polyline Reduction
 ### Requirements:
-folium==0.14.0
-hdbscan==0.8.29
-numpy==1.21.5
-pandas==1.4.4
-utm==0.7.0
+folium==0.14.0\
+hdbscan==0.8.29\
+numpy==1.21.5\
+pandas==1.4.4\
+utm==0.7.0\
 The package requirements has been consolidated at model_1/requirements.txt
 
 ### Demo:
