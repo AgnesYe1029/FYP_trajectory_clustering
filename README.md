@@ -30,10 +30,28 @@ utm==0.7.0\
 The package requirements has been consolidated at model_2/requirements.txt.
 <br/>
 
-## React.js Front-end Web application
+### Training and Clustering
+Due to the file size limit imposed by Git, only partial checkpoint files are uploaded. \
+To run the model, first initiate an TrajPatternMiner object and supply the parameters:\
+```
+tpm = TrajPatternMiner(traj_to_try, learning_rate, training_epochs, \
+                      display_step, units, batch_size, max_n_steps, frame_dim, window_size)
+```
+Start training by calling: 
+```
+trajVec = tpm.runTheModel()
+```
+Perform clustering on the vectors:
+```
+tpm.cluster_by_HDBSCAN(trajVec, number_of_clusters)
+```
+
+## React.js Front-end Web Application
 ### Requirements:
 
 ### To run:
-1. cd to local directory.
-2. cd frontend
-3. run "npm start".
+1. cd to local directory and then cd to ```frontend``` directory.
+```
+cd frontend
+```
+3. run ```npm start```.
