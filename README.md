@@ -43,7 +43,7 @@ trajVec = tpm.runTheModel()
 ```
 Perform clustering on the vectors:
 ```
-tpm.cluster_by_HDBSCAN(trajVec, number_of_clusters)
+tpm.cluster_by_kmeans(trajVec, number_of_clusters)
 ```
 
 ## React.js Front-end Web Application
