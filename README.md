@@ -1,4 +1,11 @@
 # SCSE22-0161：Mining Big Spatial Data
+## Project Introduction:
+This is my final year project. A large [geospatial taxi trajectory dataset](https://www.kaggle.com/datasets/crailtap/taxi-trajectory) is used as dataset.
+The goal of project is to mine the patterns of trajectories and cluster trajectories into groups based on the pattern. To achieve this goal, two trajectory clustering models are presented, and a web-based front-end application is developed for visualization. 
+The first trajectory clustering model mainly contains a trajectory reduction layer and a trajectory clustering layer. The trajectory reduction layer utilizes Ramer–Douglas–Peucker Algorithm to reduce the size of trajectories, while preserving the geometric shape. The trajectory clustering layer adopts Hierarchical Density-Based Spatial Clustering of Applications with Noise (HDBSCAN) algorithm to produce clusters out of the reduced trajectories. This model is able to cluster long trajectories, but it cannot identify intertwined and dense trajectories.
+The second model resolves the bottleneck by introducing Reccurent Neural Network (RNN) with a behavior extraction algorithm. The model consists of three layers: trajectory feature extraction, trajectory pattern mining and trajectory clustering. Trajectory feature extraction layer summarizes the trajectory moving pattern using sliding window. Trajectory pattern mining layer accepts the patterns and learns vector representation from them, using sequence-to-sequence encoder-decoder model with attention. The vectors are then clustered by K-means in trajectory clustering layer. This 3-layer model outperforms our first model as it is able to produce fairly distributed clusters, and group the trajectories with higher precision.
+To facilitate the visualization, a web-based front-end application is developed using React.js. It displays the trajectory cluster on the map, and interacts with user to render details of the cluster.
+Kindly refer to my [final year paper](https://docs.google.com/document/d/1j8JpARGWVxokr4WceYHK6qNbG8tF7QNtXqWZQ1kavv0/edit?usp=sharing) for more details and technicals.
 &nbsp;
 ## Model 1: Trajectory Clustering with Polyline Reduction
 ### Requirements
